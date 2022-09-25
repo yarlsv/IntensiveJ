@@ -25,13 +25,9 @@ public class Model {
     }
 
     public void remove(UserApp user) {
-        model.remove(user.getName());
+        model.remove(user);
     }
 
-    public void read (UserApp user) {
-        int a = model.indexOf(user.getName());
-        model.get(a);
-    }
 
     public List<String> list() {
         return model.stream()
