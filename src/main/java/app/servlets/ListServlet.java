@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/list")
+@WebServlet(name = "list", urlPatterns = "/list")
 public class ListServlet extends HttpServlet {
 
     @Override
